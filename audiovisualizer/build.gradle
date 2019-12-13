@@ -1,4 +1,9 @@
 apply plugin: 'com.android.library'
+
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.czhongm'
+
 //apply plugin: 'com.jfrog.bintray'
 //apply plugin: 'maven-publish'
 //
@@ -46,7 +51,7 @@ dependencies {
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
     testImplementation 'junit:junit:4.12'
 }
 

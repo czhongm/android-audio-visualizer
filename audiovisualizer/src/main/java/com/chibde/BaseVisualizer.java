@@ -109,5 +109,10 @@ abstract public class BaseVisualizer extends View {
         return visualizer;
     }
 
+    public void setBytes(byte[] bytes) {
+        this.bytes = bytes;
+        invalidate();
+    }
+
     protected abstract void init();
 }
